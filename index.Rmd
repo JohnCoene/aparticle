@@ -1,0 +1,57 @@
+# aparticle
+
+Particle system for [aframer](https://aframer.john-coene.com)
+
+## Installation
+
+```{r, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("JohnCoene/aframer")
+```
+
+## Example
+
+More examples on the [website](https://aparticle.john-coene.com).
+
+```{r}
+library(aframer)
+library(aparticle)
+
+embed_aframe(
+  a_scene(
+    a_dependency(),
+    aparticle_dependency(),
+    a_sky(color = "#d3e4e5"),
+    a_entity(
+      position = xyz_aframe(0, 2.25, -15),
+      `particle-system` = "color: #EF0000,#44CC00"
+    ),
+    a_sphere(
+      position = xyz_aframe(0, 1.25, -1),
+      radius = "1.25",
+      color = "#EF2D5E"
+    ),
+    a_box(
+      position = xyz_aframe(-1, 0.5, 1),
+      rotation = xyz_aframe(0, 45, 0),
+      width = 1,
+      height = 1,
+      depth = 1,
+      color = "#4CC3D9"
+    ),
+    a_cylinder(
+      position = xyz_aframe(1, 0.75, 1),
+      radius = .5,
+      height = 1.5,
+      color = "#FFC65D"
+    ),
+    a_plane(
+      rotation = "-90 0 0",
+      width = 4,
+      height = 4,
+      color = "#7BC8A4"
+    )
+  )
+)
+```
+

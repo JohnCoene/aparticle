@@ -1,0 +1,13 @@
+Package: aparticle
+Title: 'aframer' Particle System
+Version: 0.0.0.9000
+Authors@R: person("John", "Coene", email = "jcoenep@gmail.com", role = c("aut", "cre"))
+Description: 'aframer' Particle System.
+Depends: R (>= 3.4.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: htmltools, aframer
+URL: http://aparticle.john-coene.com/
+BugReports: https://github.com/JohnCoene/aparticle/issues
